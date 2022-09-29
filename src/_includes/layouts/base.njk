@@ -9,10 +9,10 @@
     <title>Adrien Leray - Développeur Web</title>
 </head>
 
-<body>
-    <h1 class="text-3xl text-green-800 font-bold underline">
-        Hello world!
-    </h1>
+<body class="bg-background text-on-background dark:bg-d-background dark:text-d-on-background">
+      {% include 'partials/_header.html' %}
+      {{ content | safe }}
+      {% include 'partials/_footer.html' %}
 </body>
 
 </html>
