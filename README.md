@@ -2,4 +2,4 @@
 
 Just my own website with my profile, projects and skills :)
 
-Made by love ❤️ 2021
+Made by love ❤️ 2022
