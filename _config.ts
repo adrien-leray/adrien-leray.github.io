@@ -8,7 +8,18 @@ const site = lume({
 site.use(windi({
   config: {
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          sans: ["Fira Sans", "ui-sans-serif", "system-ui"],
+          serif: ["Lora", "Open Sans"],
+          mono: ["Fira Code", "ui-monospace", "SFMono-Regular"],
+          display: ["Oswald"],
+          body: ["Open Sans"],
+        },
+        lineHeight: {
+          "title": "4rem",
+        },
+      },
       colors: {
         // LIGHT
         "on-light": "#FFFFFF",
