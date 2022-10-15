@@ -1,9 +1,19 @@
 import lume from "lume/mod.ts";
 import windi from "lume/plugins/windi_css.ts";
+import inline from "lume/plugins/inline.ts";
+import minifyHTML from "lume/plugins/minify_html.ts";
+import svgo from "lume/plugins/svgo.ts";
+import esbuild from "lume/plugins/esbuild.ts";
+import sourceMaps from "lume/plugins/source_maps.ts";
+
+// Modules plugin configuration
+const modules = {
+  pagesExtensions: [".page.js", ".page.ts"],
+};
 
 const site = lume({
   src: "./src",
-});
+}, { modules });
 
 site.use(windi({
   config: {
@@ -70,6 +80,13 @@ site.use(windi({
     },
   },
 }));
+
+site.use(svgo());
+site.use(inline());
+site.use(minifyHTML());
+
+site.use(esbuild());
+site.use(sourceMaps());
 
 site.copy("favicon.ico");
 
