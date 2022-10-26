@@ -1,9 +1,19 @@
 import lume from "lume/mod.ts";
 import windi from "lume/plugins/windi_css.ts";
+import inline from "lume/plugins/inline.ts";
+import minifyHTML from "lume/plugins/minify_html.ts";
+import svgo from "lume/plugins/svgo.ts";
+import esbuild from "lume/plugins/esbuild.ts";
+import sourceMaps from "lume/plugins/source_maps.ts";
+
+// Modules plugin configuration
+const modules = {
+  pagesExtensions: [".page.js", ".page.ts"],
+};
 
 const site = lume({
   src: "./src",
-});
+}, { modules });
 
 site.use(windi({
   config: {
@@ -22,11 +32,14 @@ site.use(windi({
       },
       colors: {
         // LIGHT
-        "on-light": "#FFFFFF",
         "primary": "#525F77",
+        "on-primary": "#FFFFFF",
         "secondary": "#5C5E65",
+        "on-secondary": "#FFFFFF",
         "tertiary": "#665B66",
+        "on-tertiary": "#FFFFFF",
         "error": "#BA1A1A",
+        "on-error": "#FFFFFF",
         "primary-container": "#D7E2FF",
         "secondary-container": "#E1E2EA",
         "tertiary-container": "#EEDEEB",
@@ -70,6 +83,25 @@ site.use(windi({
     },
   },
 }));
+
+site.use(svgo());
+site.use(inline());
+site.use(minifyHTML());
+
+site.use(esbuild({
+  extensions: [".ts", ".js"],
+  options: {
+    bundle: true,
+    format: "esm",
+    minify: false,
+    keepNames: true,
+    platform: "browser",
+    target: "esnext",
+    incremental: true,
+    treeShaking: true,
+  },
+}));
+site.use(sourceMaps());
 
 site.copy("favicon.ico");
 
