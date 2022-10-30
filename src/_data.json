@@ -1,0 +1,12 @@
+{
+  "metas": {
+    "site": "Adrien Leray Portfolio",
+    "twitter": "@AdrienLry",
+    "icon": "/assets/images/batman.svg",
+    "lang": "fr",
+    "generator": true
+  },
+  "mergedKeys": {
+    "metas": "object"
+  }
+}
