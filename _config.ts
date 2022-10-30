@@ -5,6 +5,7 @@ import minifyHTML from "lume/plugins/minify_html.ts";
 import svgo from "lume/plugins/svgo.ts";
 import esbuild from "lume/plugins/esbuild.ts";
 import sourceMaps from "lume/plugins/source_maps.ts";
+import metas from "lume/plugins/metas.ts";
 
 // Modules plugin configuration
 const modules = {
@@ -84,6 +85,7 @@ site.use(windi({
   },
 }));
 
+site.use(metas());
 site.use(svgo());
 site.use(inline());
 site.use(minifyHTML());
