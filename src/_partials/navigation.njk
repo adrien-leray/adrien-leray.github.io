@@ -1,8 +1,12 @@
-<nav class="px-5 md:px-20 py-2.5 md:py-5 flex items-center">
-    <img src="../assets/images/batman.svg" class="w-16 h-auto" inline>
-    <div class="flex flex-1 justify-end items-center text-lg">
-        {% for link in navigation.links %}
-            <a href="{{ link.url }}" class="px-4 font-body font-bold underline">{{ link.text }}</a>
-        {% endfor %}
+<nav class="py-2.5 z-5 md:mx-auto md:py-5 lg:max-w-xl xl:max-w-xl">
+    <div class="flex flex-col flex-1 justify-between items-center text-lg lg:flex-row">
+        <a href="/about" class="text-2xl font-semibold">ADRIEN LERAY</a>
+        <ul class="flex list-none ">
+            {% for link in navigation.links %}
+                <li>
+                    <a href="{{ link.url }}" class="px-2 md:px-4 font-body font-normal focus:font-bold active:font-bold transition-all duration-150 hover:ring hover:ring-offset-1 hover:ring-on-background">{{ link.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
-</nav> 
+</nav>

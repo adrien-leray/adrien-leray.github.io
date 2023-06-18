@@ -1,8 +1,12 @@
-<footer class="p-5 md:p-20 pt-10 bg-primary">
-    <p class="text-on-primary">Made with love <span class="inline-block animate-bounce">❤️</span> using super experimental technologies like <a class="hover:underline transition-all duration-150" href="{{tools.deno.url}}" target="_blank">{{tools.deno.title}}</a> & <a class="hover:underline transition-all duration-150" href="{{tools.lume.url}}" target="_blank">{{tools.lume.title}}</a></p>
+<footer class="grow p-5 z-5  md:mx-auto md:py-5 lg:max-w-xl xl:max-w-xl">
+    <p>Made with love <span class="inline-block animate-bounce">❤️</span> using super experimental technologies like <a class="transition-all duration-150 hover:ring hover:ring-offset-1 hover:ring-on-background" href="{{tools.deno.url}}" target="_blank">{{tools.deno.title}}</a> & <a class="transition-all duration-150 hover:ring hover:ring-offset-1 hover:ring-on-background" href="{{tools.lume.url}}" target="_blank">{{tools.lume.title}}</a>
+    </p>
     <ul class="w-full list-none flex justify-center gap-6 mt-10">
         {% for social in socials %}
-            <li><a class="hover:underline transition-all duration-150 text-on-primary" href="{{social.url}}" target="_blank">{{social.icon}} {{social.title}}</a></li>
+            <li>
+                <a class="transition-all duration-150 hover:ring hover:ring-offset-1 hover:ring-on-background" href="{{social.url}}" target="_blank">{{social.icon}}
+                    {{social.title}}</a>
+            </li>
         {% endfor %}
     </ul>
 </footer>

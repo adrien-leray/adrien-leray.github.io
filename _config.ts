@@ -21,11 +21,11 @@ site.use(windi({
     theme: {
       extend: {
         fontFamily: {
-          sans: ["Fira Sans", "ui-sans-serif", "system-ui"],
-          serif: ["Lora", "Open Sans"],
-          mono: ["Fira Code", "ui-monospace", "SFMono-Regular"],
-          display: ["Oswald"],
-          body: ["Open Sans"],
+          sans: ["Work Sans", "ui-sans-serif", "system-ui"],
+          serif: ["Work Sans"],
+          mono: ["Work Sans", "ui-monospace", "SFMono-Regular"],
+          display: ["Work Sans"],
+          body: ["Work Sans"],
         },
         lineHeight: {
           "title": "4rem",
@@ -34,6 +34,7 @@ site.use(windi({
       colors: {
         // LIGHT
         "primary": "#525F77",
+        "primary-50": "#4977C2",
         "on-primary": "#FFFFFF",
         "secondary": "#5C5E65",
         "on-secondary": "#FFFFFF",
@@ -49,10 +50,10 @@ site.use(windi({
         "on-secondary-container": "#191C21",
         "on-tertiary-container": "#211922",
         "on-error-container": "#410002",
-        "background": "#FFFBFC",
-        "on-background": "#1B1B1C",
-        "surface": "#FFFBFC",
-        "on-surface": "#1B1B1C",
+        "background": "#fafafa;",
+        "on-background": "#000",
+        "surface": "#fafafa;",
+        "on-surface": "#000",
         "surface-variant": "#E4E2E5",
         "on-surface-variant": "#464649",
         "outline": "#77777A",

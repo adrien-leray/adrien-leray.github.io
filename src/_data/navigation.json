@@ -1,20 +1,24 @@
 {
   "links": [
     {
-      "text": "Home",
-      "url": "/home"
+      "text": "Work",
+      "url": "/"
     },
     {
       "text": "Projects",
       "url": "/projects"
     },
     {
-      "text": "Blog",
-      "url": "/blog"
-    },
-    {
       "text": "About",
       "url": "/about"
+    },
+    {
+      "text": "Contact",
+      "url": "/contact"
+    },
+    {
+      "text": "Linkedin",
+      "url": "https://www.linkedin.com/in/adrien-leray"
     }
   ]
 }
