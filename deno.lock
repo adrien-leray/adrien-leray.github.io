@@ -372,6 +372,7 @@
     "https://deno.land/x/lume@v1.12.0/middlewares/logger.ts": "69e69099a2e3a8c62d0bb62014381337f6e855c6b330e210e4a705fe8111e10a",
     "https://deno.land/x/lume@v1.12.0/middlewares/no_cache.ts": "95fb11d820d931b6aca268fa30aee22e315c556bd214e135bb9b5ddbcbe039d6",
     "https://deno.land/x/lume@v1.12.0/middlewares/not_found.ts": "0ed5fe89adb49c1862a03f7e316f9cda2722af9fd2db3bfc9225b6d5e978db26",
+    "https://deno.land/x/lume@v1.12.0/middlewares/redirects.ts": "4621c4a7615e8ef0e03ffac14e80ba2d2e5c8dbd4b56d8057e368b93a79a7c5b",
     "https://deno.land/x/lume@v1.12.0/middlewares/reload.ts": "906f3e497613538efe5531e47a19f9b4966cc1dd12acf3f11e7fd12c4da0df66",
     "https://deno.land/x/lume@v1.12.0/middlewares/reload_client.js": "ee9075e474f9cd863305c3ef542eb25d00bfb390e5dc64050bdbd92245a75c08",
     "https://deno.land/x/lume@v1.12.0/mod.ts": "9ab3be81cb0638e6dc0d77a6bf33097a531ab412ebffd55748515d4d2c8bfee4",
